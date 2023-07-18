@@ -22,9 +22,9 @@ function renderTodoList() {
   const todoList = document.querySelector("#todo-list");
   todoList.innerHTML = "";
 
-  tasks
-    .sort((a, b) => a.index - b.index)
-    .forEach((task) => {
+  
+    tasks.sort((a, b) => a.index - b.index)
+    tasks.forEach((task) => {
       const li = document.createElement("li");
 
       li.innerHTML = `
